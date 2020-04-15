@@ -45,7 +45,9 @@ bag,hello,without,world
 提示：
 如果将输入数据提供给问题，则应假定它是控制台输入。'''
 
-#这道题和上面第7题的的区别是什么，“在将句子中的所有字符都排序之后打印行”是什么意思呢
+# list1 = [x for x in input("请输入一句话：").split(",")]
+# list1.sort()
+# print(','.join(list1))
 
 '''问题9
 编写一个程序，该程序接受由空格分隔的单词序列作为输入，
@@ -59,17 +61,23 @@ HELLO WORLD PRACTICE MAKES PERFECT
 如果将输入数据提供给问题，则应假定它是控制台输入。
 我们使用set容器自动删除重复的数据，然后使用sorted（）对数据进行排序。'''
 
+list1 =[]
 s = [x for x in  input("请输入一句话：").split()]
+a= list(set(s))
 
-s.upper()
-print(s)
+for x in a:
+    list1.append(x.upper())
 
-# 这道题我不会啊
+list1.sort()
+
+print(' '.join(list1))
+
+
 
 '''问题10
 编写一个接受句子并计算字母和数字数量的程序。
 假设将以下输入提供给程序：
-你好，世界！123
+你好，世界！123F
 然后，输出应为：
 字母10
 数字3
