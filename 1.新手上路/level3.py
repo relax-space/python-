@@ -32,7 +32,7 @@ for p in password1:
         continue
     elif not re.findall("[$#@]",p):
         continue
-    elif re.findall("[/%~!/:?\\|<>^/\"]",p):
+    elif re.findall("[/%~!/:?\\|<>^/\"+-=/]",p):
         continue
     elif len(p)<6 and len(p)>12:
         continue
