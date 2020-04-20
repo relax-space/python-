@@ -1,13 +1,9 @@
 # coding=utf-8
 import xlrd
-import sys
-import traceback
 from datetime import datetime
 from xlrd import xldate_as_tuple
-from importlib import reload
 
 
-   
 
 def read_excel(filename, sheetname):
     rbook = xlrd.open_workbook(filename)
