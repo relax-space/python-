@@ -1,5 +1,7 @@
 import os
 import xlwt
+import xlrd
+from datetime import date,datetime
 
 # 读写txt文件
 with open (r'\project\test2.txt','r',encoding='utf-8') as f:
@@ -18,7 +20,7 @@ with open (r'\project\test2.txt','w',encoding='utf-8') as f:
 with open (r'\project\test2.txt','a',encoding='utf-8') as f:
     f.write("在文章的末尾加一行数据。\n")
 
-# 读写Excel文件
+# # 读写Excel文件
 def set_style(name,height,bold=False):
     style = xlwt.XFStyle()
     font = xlwt.Font()
@@ -50,3 +52,7 @@ def write_excel():
 
 if __name__ == '__main__':
     write_excel()
+
+
+   
+
